@@ -23,4 +23,4 @@ phases:
       - ls -la
       - aws s3 sync ./build s3://cicd-admin --delete
       - aws configure set preview.cloudfront true
-      - aws cloudfront create-invalidation --distribution-id=ERYG3ONYHCCK2 --paths '/*
+      - aws cloudfront create-invalidation --distribution-id=ERYG3ONYHCCK2 --paths '/*'
