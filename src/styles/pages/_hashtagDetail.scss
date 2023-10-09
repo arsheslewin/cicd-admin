@@ -1,0 +1,34 @@
+.hashtag-detail {
+  .hashtag-insights {
+    .insight-select {
+      .ant-select-selector {
+        background: #fff;
+      }
+    }
+
+    .insight-card {
+      padding: 40px;
+      &__title {
+        font-size: 20px;
+        color: $color_black;
+        margin-bottom: 20px;
+      }
+
+      &__value {
+        display: flex;
+        flex-direction: column;
+        color: $color_black;
+
+        & > div:first-child {
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+        & > div:last-child {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.statistic {
+  margin-top: -12px;
+  margin-bottom: 32px;
+
+  .ant-col {
+    max-width: 276px;
+  }
+
+  .ant-card {
+    height: 100%;
+    background: linear-gradient(180deg, $color_black_2 0%, $color_black_3 73.96%);
+    border: 1px solid $color_blue_1;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: $color_black;
+    padding: 16px;
+
+    &-body {
+      padding: 0;
+    }
+
+    svg {
+      vertical-align: text-top;
+    }
+
+    .ant-typography {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+      color: $color_white;
+      margin-top: 16px;
+    }
+  }
+}

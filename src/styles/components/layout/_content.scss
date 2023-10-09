@@ -1,0 +1,22 @@
+.app-content {
+  padding: 30px 48px 133px;
+  min-height: calc(100vh - 96px);
+  background: $color_bg_2;
+  overflow: auto;
+  @include scrollbars();
+
+  .container {
+    background: $color_white;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: unset;
+
+    > span h5.ant-typography {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: $color_text_1;
+      margin-bottom: 15px;
+    }
+  }
+}

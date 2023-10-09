@@ -1,0 +1,10 @@
+.ant-typography h1,
+div.ant-typography-h1,
+div.ant-typography-h1 > textarea,
+h1.ant-typography {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  color: $color_black;
+  margin-bottom: 30px;
+}

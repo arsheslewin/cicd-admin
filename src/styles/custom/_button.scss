@@ -1,0 +1,121 @@
+.ant-btn {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &.form-button {
+    background: transparent;
+    border-radius: 4px;
+    width: 32px;
+    padding: 4px;
+  }
+
+  &.ghost-button {
+    padding: 0;
+    width: auto;
+    height: auto;
+    background: transparent;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+.app-button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 10px 14px;
+  height: 40px;
+  background: $color-primary;
+  border-radius: 8px;
+  border: unset;
+  box-shadow: 0px 0px 12px -4px rgba(22, 34, 51, 0.08);
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    color: #ffffff;
+    background: $color-primary;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background: rgba($color-primary, 0.9);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    color: #ffffff !important;
+    background: rgba($color-primary, 0.9) !important;
+  }
+}
+
+.app-button-no-bg {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color_text_1;
+  background: unset;
+  border: 1px solid $color_border_1;
+  transition: color 0.3s, border 0.3s ease;
+
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  height: 40px;
+  border-radius: 8px;
+
+  &:focus,
+  &:active {
+    color: $color_text_1;
+    outline: unset;
+    background: rgba(187, 187, 187, 0.3);
+  }
+
+  &:hover {
+    color: $color_text_1;
+    background: rgba(187, 187, 187, 0.3);
+    border: 1px solid $color_border_1;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

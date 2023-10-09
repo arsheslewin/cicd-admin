@@ -1,0 +1,46 @@
+.status-label {
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  &--active {
+    background: rgba($color_active, 0.1);
+    color: $color_active;
+  }
+  &--unverified {
+    background: rgba($color_un_verified, 0.1);
+    color: $color_un_verified;
+  }
+  &--blocked {
+    background: rgba($color_blocked, 0.1);
+    color: $color_blocked;
+  }
+  &--deleted {
+    background: rgba($color_deleted, 0.1);
+    color: $color_deleted;
+  }
+  &--pending {
+    background: rgba($color_pending, 0.1);
+    color: $color_pending;
+  }
+  &--public {
+    background: rgba($color_active, 0.1);
+    color: $color_active;
+  }
+  &--private {
+    background: rgba($color_pending, 0.1);
+    color: $color_pending;
+  }
+  &--creating {
+    background: rgba($color_un_verified, 0.1);
+    color: $color_un_verified;
+  }
+}

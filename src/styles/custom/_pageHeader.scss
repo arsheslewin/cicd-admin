@@ -1,0 +1,36 @@
+.ant-page-header {
+  padding: 0 0 16px 0;
+
+  .ant-page-header-heading {
+    &-left {
+      .ant-page-header-back-button {
+        .icon-back {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $color_bg_1;
+          border-radius: 8px;
+
+          svg {
+            transform: scale(1.2);
+            > path {
+              fill: $color_black;
+            }
+          }
+        }
+      }
+    }
+
+    &-title {
+      color: $color_black;
+    }
+
+    &-extra {
+      .ant-btn > svg > path {
+        fill: $color_white;
+      }
+    }
+  }
+}

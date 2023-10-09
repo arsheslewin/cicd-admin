@@ -1,0 +1,27 @@
+version: 0.2
+env:
+  variables:
+    APP_NAME: "8beat-admin"
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16.x
+    commands:
+      - echo install process started
+      - ls -la
+      - npm install yarn
+      - yarn
+  build:
+    commands:
+      - echo build process started now
+      - ls 
+      - yarn build
+  post_build:
+    commands:
+      - echo build process finished, we should uplload to S3 now
+      - ls 
+      - cd dist/
+      - ls -la
+      - aws s3 sync . s3://cicd-admin --delete
+      - aws configure set preview.cloudfront true
+      - aws cloudfront create-invalidation --distribution-id=ERYG3ONYHCCK2 --paths '/*

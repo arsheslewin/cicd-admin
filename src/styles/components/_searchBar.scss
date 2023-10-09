@@ -1,0 +1,101 @@
+.form-container {
+  position: relative;
+
+  > form {
+    margin-bottom: 30px;
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+
+  > button.ant-dropdown-trigger {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    padding: 0;
+    margin-top: 15px;
+
+    > div {
+      > div {
+        flex: auto;
+      }
+    }
+  }
+
+  .ant-collapse > .ant-collapse-item:last-child,
+  .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+    padding: 0;
+  }
+
+  .ant-collapse-expand-icon {
+    display: none;
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+
+  .form {
+    &-item {
+      &--horizontal {
+        display: flex;
+        align-items: center;
+
+        .form-item__label {
+          margin-right: 10px;
+          margin-bottom: 0;
+        }
+      }
+
+      &__label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        color: $color_black;
+      }
+
+      .addon-after--required {
+        color: red;
+      }
+    }
+
+    &__date-range {
+      display: flex;
+      align-items: center;
+      background: $color_black;
+      border: 1px solid $color_blue;
+      border-radius: 64px;
+      padding: 11px 15.5px;
+
+      > svg {
+        margin: 0 8px;
+      }
+
+      > div:first-of-type {
+        .ant-picker {
+          &-suffix {
+            display: none;
+          }
+        }
+      }
+
+      .ant-picker {
+        background: transparent;
+        border: none;
+        padding: 0;
+        &-focused {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
